@@ -1,5 +1,6 @@
 PI = 3.14
 
+
 class Circle:
     def __init__(self, center, radius):
         self.center = center
@@ -9,7 +10,7 @@ class Circle:
         return PI * (self.radius ** 2)
 
     def do_intersect(self, circle):
-        l_centers = (((self.center.x - circle.center.x) ** 2) + ( (self.center.y - circle.center.y) ** 2) ) ** 0.5
+        l_centers = (((self.center.x - circle.center.x) ** 2) + ((self.center.y - circle.center.y) ** 2)) ** 0.5
         delta = l_centers - self.radius - circle.radius
         if delta > 0:
             return False
@@ -25,7 +26,7 @@ class Circle:
 
     # x ≤ y
     def __le__(self, other):
-        if self.square( ) <= other.square():
+        if self.square() <= other.square():
             return True
         else:
             return False
