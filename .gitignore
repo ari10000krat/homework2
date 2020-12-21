@@ -8,3 +8,5 @@
 !requirements.txt
 !.flake8
 !.gitignore
+#Кроме файла README.md
+!README.md
