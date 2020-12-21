@@ -1,0 +1,10 @@
+#Игнорирование всех файлов
+/*
+#Кроме файла main.py
+!main.py
+#Кроме подпапки 
+!/src
+#Кроме файлов requirements.txt, .flake8, .gitignore
+!requirements.txt
+!.flake8
+!.gitignore
